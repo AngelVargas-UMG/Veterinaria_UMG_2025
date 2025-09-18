@@ -1,0 +1,225 @@
+[
+  {
+    "ContainingType": "api_veterinaria.src.routes.Especies\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEspeciesEndpoint\u003Eb__0_0",
+    "RelativePath": "api/veterinaria/especies/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Especies - Obtener Especies"
+    ],
+    "EndpointName": "ListarEspecies"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.Estado\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEstadoEnpoint\u003Eb__0_0",
+    "RelativePath": "api/veterinaria/estado/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Estados - Obtener Estados"
+    ],
+    "EndpointName": "ListarEstados"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.EstadoSalud\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEstadoSaludEnpoint\u003Eb__0_0",
+    "RelativePath": "api/veterinaria/estadoSalud/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "EstadoSalud - Obtener Estado Salud"
+    ],
+    "EndpointName": "ListarEstadoSalud"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.Mascotas\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMascotasEndpoints\u003Eb__0_0",
+    "RelativePath": "api/veterinaria/mascotas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Raza",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Sexo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Color",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nacimiento",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      },
+      {
+        "Name": "EspecieID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EstadoSaludID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Usuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Mascotas - Crear Mascotas"
+    ],
+    "EndpointName": "CrearMascotas"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.Mascotas\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMascotasEndpoints\u003Eb__0_1",
+    "RelativePath": "api/veterinaria/mascotas/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EspecieID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Mascotas - Obtener Mascotas"
+    ],
+    "EndpointName": "ListarMascotas"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.Usuarios\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUsuariosEnpoint\u003Eb__0_0",
+    "RelativePath": "api/veterinaria/usuarios/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Usuarios - Obtener Usuarios"
+    ],
+    "EndpointName": "ListarUsuarios"
+  },
+  {
+    "ContainingType": "api_veterinaria.src.routes.Usuarios\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUsuariosEnpoint\u003Eb__0_1",
+    "RelativePath": "api/veterinaria/usuarios/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Apellido",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Correo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Telefono",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Direccion",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Usuarios - Crear Usuario"
+    ],
+    "EndpointName": "CrearUsuarios"
+  }
+]
